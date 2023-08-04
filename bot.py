@@ -24,11 +24,11 @@ log = logging.getLogger("ChannelAutoPost")
 # start the bot
 log.info("Starting...")
 try:
-    apiid = config("APP_ID", cast=int)
-    apihash = config("API_HASH")
-    bottoken = config("BOT_TOKEN")
-    frm = config("FROM_CHANNEL", cast=lambda x: [int(_) for _ in x.split(" ")])
-    tochnls = config("TO_CHANNEL", cast=lambda x: [int(_) for _ in x.split(" ")])
+    apiid = config("27657785", cast=int)
+    apihash = config("0d47fc5de9b59e6427b14560708910ff")
+    bottoken = config("6108492559:AAE5WTjsq19eSLmmQ7tYSbSDJmzJ19fHjFs")
+    frm = config("1001985875752", cast=lambda x: [int(_) for _ in x.split(" ")])
+    tochnls = config("1001890476774", cast=lambda x: [int(_) for _ in x.split(" ")])
     datgbot = TelegramClient(None, apiid, apihash).start(bot_token=bottoken)
 except Exception as exc:
     log.error("Environment vars are missing! Kindly recheck.")
